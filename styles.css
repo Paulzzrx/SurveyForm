@@ -1,0 +1,84 @@
+body {
+    font-family: Tahoma, sans-serif;
+    background-color: #050505;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+h1 {
+    color: #ffffff;
+    text-shadow: 2px 3px #5809b3;
+    text-align: center;
+}
+
+p {
+    color: white;
+}
+
+hr {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 100px;
+}
+
+#description {
+    color: #ffffff;
+    text-shadow: 1px 1px #5809b3;
+    text-align: center;
+}
+
+#survey-form {
+    background: #220141;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(177, 177, 177, 0.61);
+    width: 80%;
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+form div {
+    padding: 0 20px 0 0;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+    color: black;
+    border: 2px solid black;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background: #000000;
+    color: #fff;
+    padding: 10px 15px;
+    border: 1px solid white;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #1f1f1f;
+}

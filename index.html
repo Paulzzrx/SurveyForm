@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Satisfaction Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Customer Satisfaction Survey</h1>
+
+    <p id="description">
+      Please respond honestly so that we can improve our services
+    </p>
+
+    <form id="survey-form">
+      <div>
+        <label id="name-label" for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+
+      <div>
+        <label id="email-label" for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+
+      <div>
+        <label id="number-label" for="number">Age:</label>
+        <input
+          type="number"
+          id="number"
+          name="age"
+          min="1"
+          max="120"
+          placeholder="Enter your age"
+          required
+        />
+      </div>
+      <hr>
+      <div>
+        <label for="dropdown"
+          >What is your level of satisfaction with our product?</label
+        >
+        <select id="dropdown" name="role" required>
+          <option value="" disabled selected>Select one</option>
+          <option value="too-bad">Terrible</option>
+          <option value="bad">Bad</option>
+          <option value="ok">Ok</option>
+          <option value="good">Good</option>
+          <option value="perfect">Perfect</option>
+        </select>
+      </div>
+
+      <div>
+        <p>Would you recommend our product?</p>
+        <label>
+          <input type="radio" name="recommend" value="definitely" required />
+          Definitely
+        </label>
+        <label>
+          <input type="radio" name="recommend" value="maybe" required />
+          Maybe
+        </label>
+        <label>
+          <input type="radio" name="recommend" value="notSure" required />
+          Not sure
+        </label>
+      </div>
+
+      <div>
+        <p>What do you like most about our product?</p>
+        <label>
+          <input type="checkbox" name="improve" value="use" />
+          Simplicity of Use
+        </label>
+        <label>
+          <input type="checkbox" name="improve" value="performance" />
+          Performance
+        </label>
+        <label>
+          <input type="checkbox" name="improve" value="design" />
+          Design
+        </label>
+        <label>
+          <input type="checkbox" name="improve" value="variety" />
+          Variety
+        </label>
+        <label>
+          <input type="checkbox" name="improve" value="quality" />
+          Quality
+        </label>
+        <label>
+          <input type="checkbox" name="improve" value="style" />
+          Style
+        </label>
+        <label>
+          <input type="checkbox" name="improve" value="comfort" />
+          Comfort
+        </label>
+        <label>
+          <input type="checkbox" name="improve" value="efficiency" />
+          Efficiency
+        </label>
+      </div>
+      <hr>
+      <div>
+        <label for="comments">What can we improve?</label>
+        <textarea
+          id="comments"
+          name="comments"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
